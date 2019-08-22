@@ -27,6 +27,7 @@ enum Command {
 enum ListType {
     black
     white
+    grey
 }
 
 struct Row {
@@ -115,7 +116,7 @@ service WbListService {
     * Возвращает информацию по записи в списке
     * если списка не существует то выбрасывается ListNotFound
     **/
-    RowInfo getRowInfo(1: list<Row> row)
+    RowInfo getRowInfo(1: Row row)
         throws (1: ListNotFound ex1)
 
 }
