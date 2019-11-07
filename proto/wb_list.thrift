@@ -35,13 +35,13 @@ struct Row {
     // ID
     1: optional IdInfo id
     // Тип списка
-    3: required ListType list_type
+    2: required ListType list_type
     // Идентификатор списка
-    4: required ID list_name
+    3: required ID list_name
     // Значение в списке
-    5: required Value value
+    4: required Value value
     // Дополнительная информация
-    6: optional RowInfo row_info
+    5: optional RowInfo row_info
 }
 
 struct Result {
